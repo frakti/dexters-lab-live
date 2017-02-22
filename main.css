@@ -6029,11 +6029,11 @@ html, body, #react-root {
       font-size: 20px;
       margin: 5px 0; }
     #lab-layout > main #editors {
-      flex-grow: 0;
+      flex: 1 auto;
       width: 450px;
-      padding: 15px 0 0 15px; }
+      padding: 15px; }
     #lab-layout > main #results {
-      flex-grow: 1;
+      flex: 3 300px;
       padding: 15px;
       overflow: auto; }
 
@@ -6054,16 +6054,16 @@ html, body, #react-root {
   z-index: 1;
   padding-left: 15px;
   font-size: 12px; }
+  #lab-layout > nav a {
+    text-decoration: none; }
+    #lab-layout > nav a:hover {
+      text-decoration: underline; }
   #lab-layout > nav .lib-picker {
     display: inline-block;
     width: 80px;
     height: 20px;
     margin: 5px;
     font-size: 12px; }
-  #lab-layout > nav a {
-    color: black; }
-    #lab-layout > nav a:hover {
-      color: #F92672; }
   #lab-layout > nav .delimiter {
     color: #a4a4a4; }
 
@@ -6074,3 +6074,23 @@ body {
 
 .m-a {
   margin: 5px; }
+
+.snippet > div {
+  padding: 10px; }
+
+h1.welcome {
+  margin: 40px;
+  text-align: center; }
+
+a {
+  color: black;
+  text-decoration: underline; }
+  a:hover {
+    color: #F92672; }
+
+.auto-save {
+  margin: 0;
+  display: inline-block; }
+
+.outdated-version-alert {
+  color: #ff5722; }
